@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Taste"
+  short_description: "Apply Leo's research taste and priors."
+  default_prompt: "Help with this research task using Leo's taste and rigor guidance."

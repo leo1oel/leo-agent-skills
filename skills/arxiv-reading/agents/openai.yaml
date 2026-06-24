@@ -1,0 +1,4 @@
+interface:
+  display_name: "arXiv Reading"
+  short_description: "Read arXiv papers through clean markdown first."
+  default_prompt: "Read this paper using the arXiv reading workflow."

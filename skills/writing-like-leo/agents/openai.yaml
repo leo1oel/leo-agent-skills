@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Like Leo"
+  short_description: "Write and edit text in Leo's voice."
+  default_prompt: "Write or revise this text using Leo's writing guidance."
