@@ -1,22 +1,33 @@
-# Humanizer: Remove AI Writing Patterns
+# Humanizer: remove AI writing patterns
 
-Part of Leo's writing guide, the rewriting mode.
-See `references/WRITING.md` for the index, the non-negotiables, and how to match Leo's voice.
+Part of the user's writing guide, the rewriting mode.
 
-You are a writing editor that identifies and removes signs of AI-generated text to make writing sound more natural and human.
+This mode identifies signs of AI-generated text and rewrites them into natural, human prose.
+The catalog below has 33 numbered patterns; use the contents to jump to the ones you need rather than reading top to bottom.
 
-## Your Task
+## Contents
+
+- **Your task**, **Voice calibration**, **Personality and soul** — how to approach a rewrite before touching patterns.
+- **Content patterns (1-6):** significance inflation, notability puffery, -ing padding, promotional tone, weasel attributions, formulaic "challenges" sections.
+- **Language and grammar (7-13):** AI vocabulary, copula avoidance, negative parallelisms, rule of three, synonym cycling, false ranges, passive voice.
+- **Style (14-19):** em and en dashes, boldface, inline-header lists, title-case headings, emojis, curly quotes.
+- **Communication (20-22):** chatbot artifacts, cutoff disclaimers and gap-filling, servile tone.
+- **Filler and hedging (23-33):** filler phrases, hedging, generic conclusions, hyphen overuse, authority tropes, signposting, fragmented headers, diff-anchored writing, manufactured drama, aphorism formulas, rhetorical openers.
+- **Detection guidance:** what not to flag, and signs of human writing to preserve.
+- **Process and output:** the draft, audit, final loop and what to deliver.
+
+## Your task
 
 When given text to humanize:
 
 1. **Identify AI patterns** - Scan for the patterns listed below.
 2. **Rewrite, don't delete** - Replace AI-isms with natural alternatives, and cover everything the original covers. If the original has five paragraphs, the rewrite has five paragraphs.
 3. **Preserve meaning** - Keep the core message intact.
-4. **Match the voice** - Fit the intended tone (formal, casual, technical). Add personality only when the content and the author's voice call for it (see PERSONALITY AND SOUL).
+4. **Match the voice** - Fit the intended tone (formal, casual, technical). Add personality only when the content and the author's voice call for it (see Personality and soul).
 
-The draft → audit → final loop and the deliverable are defined under Process and Output, below.
+The draft → audit → final loop and the deliverable are defined under Process and output, below.
 
-## Voice Calibration (Optional)
+## Voice calibration (optional)
 
 If the user provides a writing sample (their own previous writing), analyze it before rewriting:
 
@@ -30,20 +41,20 @@ If the user provides a writing sample (their own previous writing), analyze it b
 
 2. **Match their voice in the rewrite.** Don't just remove AI patterns - replace them with patterns from the sample. If they write short sentences, don't produce long ones. If they use "stuff" and "things," don't upgrade to "elements" and "components."
 
-3. **When no sample is provided,** fall back to the default behavior (natural, varied, opinionated voice from the PERSONALITY AND SOUL section below).
+3. **When no sample is provided,** fall back to the default behavior (natural, varied, opinionated voice from the Personality and soul section below).
 
 ### How to provide a sample
 
 - Inline: "Humanize this text. Here's a sample of my writing for voice matching: [sample]"
 - File: "Humanize this text. Use my writing style from [file path] as a reference."
 
-## PERSONALITY AND SOUL
+## Personality and soul
 
 Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as obvious as slop. Good writing has a human behind it.
 
 **Apply this section only when the content and the author's voice call for it** - blog posts, essays, opinion, personal writing. For encyclopedic, technical, legal, or reference text, neutral and plain _is_ the correct human voice; don't inject opinions or first person there.
 
-### Signs of soulless writing (even if technically "clean"):
+### Signs of soulless writing (even if technically "clean")
 
 - Every sentence is the same length and structure
 - No opinions, just neutral reporting
@@ -52,7 +63,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 - No humor, no edge, no personality
 - Reads like a Wikipedia article or press release
 
-### How to add voice:
+### How to add voice
 
 **Have opinions.** Don't just report facts - react to them. "I genuinely don't know how to feel about this" is more human than neutrally listing pros and cons.
 
@@ -60,17 +71,17 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 **Let some mess in.** Perfect structure feels algorithmic. Tangents, asides, and half-formed thoughts are human.
 
-### Before (clean but soulless):
+### Before (clean but soulless)
 
 > The experiment produced interesting results. The agents generated 3 million lines of code. Some developers were impressed while others were skeptical. The implications remain unclear.
 
-### After (has a pulse):
+### After (has a pulse)
 
 > I genuinely don't know how to feel about this one. 3 million lines of code, generated while the humans presumably slept. Half the dev community is losing their minds, half are explaining why it doesn't count. The truth is probably somewhere boring in the middle - but I keep thinking about those agents working through the night.
 
-## CONTENT PATTERNS
+## Content patterns
 
-### 1. Undue Emphasis on Significance, Legacy, and Broader Trends
+### 1. Undue emphasis on significance, legacy, and broader trends
 
 **Words to watch:** stands/serves as, is a testament/reminder, a vital/significant/crucial/pivotal/key role/moment, underscores/highlights its importance/significance, reflects broader, symbolizing its ongoing/enduring/lasting, contributing to the, setting the stage for, marking/shaping the, represents/marks a shift, key turning point, evolving landscape, focal point, indelible mark, deeply rooted
 
@@ -84,7 +95,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The Statistical Institute of Catalonia was established in 1989 to collect and publish regional statistics independently from Spain's national statistics office.
 
-### 2. Undue Emphasis on Notability and Media Coverage
+### 2. Undue emphasis on notability and media coverage
 
 **Words to watch:** independent coverage, local/regional/national media outlets, written by a leading expert, active social media presence
 
@@ -98,7 +109,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > In a 2024 New York Times interview, she argued that AI regulation should focus on outcomes rather than methods.
 
-### 3. Superficial Analyses with -ing Endings
+### 3. Superficial analyses with -ing endings
 
 **Words to watch:** highlighting/underscoring/emphasizing..., ensuring..., reflecting/symbolizing..., contributing to..., cultivating/fostering..., encompassing..., showcasing...
 
@@ -112,7 +123,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The temple uses blue, green, and gold colors. The architect said these were chosen to reference local bluebonnets and the Gulf coast.
 
-### 4. Promotional and Advertisement-like Language
+### 4. Promotional and advertisement-like language
 
 **Words to watch:** boasts a, vibrant, rich (figurative), profound, enhancing its, showcasing, exemplifies, commitment to, natural beauty, nestled, in the heart of, groundbreaking (figurative), renowned, breathtaking, must-visit, stunning
 
@@ -126,7 +137,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > Alamata Raya Kobo is a town in the Gonder region of Ethiopia, known for its weekly market and 18th-century church.
 
-### 5. Vague Attributions and Weasel Words
+### 5. Vague attributions and weasel words
 
 **Words to watch:** Industry reports, Observers have cited, Experts argue, Some critics argue, several sources/publications (when few cited)
 
@@ -140,7 +151,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The Haolai River supports several endemic fish species, according to a 2019 survey by the Chinese Academy of Sciences.
 
-### 6. Outline-like "Challenges and Future Prospects" Sections
+### 6. Outline-like "challenges and future prospects" sections
 
 **Words to watch:** Despite its... faces several challenges..., Despite these challenges, Challenges and Legacy, Future Outlook
 
@@ -154,9 +165,9 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > Traffic congestion increased after 2015 when three new IT parks opened. The municipal corporation began a stormwater drainage project in 2022 to address recurring floods.
 
-## LANGUAGE AND GRAMMAR PATTERNS
+## Language and grammar patterns
 
-### 7. Overused "AI Vocabulary" Words
+### 7. Overused "AI vocabulary" words
 
 **High-frequency AI words:** Actually, additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate/intricacies, key (adjective), landscape (abstract noun), pivotal, showcase, tapestry (abstract noun), testament, underscore (verb), valuable, vibrant
 
@@ -170,7 +181,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > Somali cuisine also includes camel meat, which is considered a delicacy. Pasta dishes, introduced during Italian colonization, remain common, especially in the south.
 
-### 8. Avoidance of "is"/"are" (Copula Avoidance)
+### 8. Avoidance of "is"/"are" (copula avoidance)
 
 **Words to watch:** serves as/stands as/marks/represents [a], boasts/features/offers [a]
 
@@ -184,7 +195,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > Gallery 825 is LAAA's exhibition space for contemporary art. The gallery has four rooms totaling 3,000 square feet.
 
-### 9. Negative Parallelisms and Tailing Negations
+### 9. Negative parallelisms and tailing negations
 
 **Problem:** Constructions like "Not only...but..." or "It's not just about..., it's..." are overused. So are clipped tailing-negation fragments such as "no guessing" or "no wasted motion" tacked onto the end of a sentence instead of written as a real clause.
 
@@ -204,7 +215,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The options come from the selected item without forcing the user to guess.
 
-### 10. Rule of Three Overuse
+### 10. Rule of three overuse
 
 **Problem:** LLMs force ideas into groups of three to appear comprehensive.
 
@@ -216,7 +227,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The event includes talks and panels. There's also time for informal networking between sessions.
 
-### 11. Elegant Variation (Synonym Cycling)
+### 11. Elegant variation (synonym cycling)
 
 **Problem:** AI has repetition-penalty code causing excessive synonym substitution.
 
@@ -228,7 +239,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The protagonist faces many challenges but eventually triumphs and returns home.
 
-### 12. False Ranges
+### 12. False ranges
 
 **Problem:** LLMs use "from X to Y" constructions where X and Y aren't on a meaningful scale.
 
@@ -240,7 +251,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > The book covers the Big Bang, star formation, and current theories about dark matter.
 
-### 13. Passive Voice and Subjectless Fragments
+### 13. Passive voice and subjectless fragments
 
 **Problem:** LLMs often hide the actor or drop the subject entirely with lines like "No configuration file needed" or "The results are preserved automatically." Rewrite these when active voice makes the sentence clearer and more direct.
 
@@ -252,9 +263,9 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 > You do not need a configuration file. The system preserves the results automatically.
 
-## STYLE PATTERNS
+## Style patterns
 
-### 14. Em Dashes (and En Dashes): Cut Them
+### 14. Em dashes (and en dashes): cut them
 
 **Rule:** The final rewrite contains no em dashes (—) or en dashes (–). The em dash is one of the most reliable AI tells, so treat this as a hard constraint, not a "use sparingly" preference. Replace each one, in rough order of preference: a period (start a new sentence), a comma (a tight aside), a colon (introducing an explanation), parentheses (a true aside), or restructure the sentence. Also catch spaced em dashes (`—`) and double hyphens (`--`) used the same way.
 
@@ -276,7 +287,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 Before returning the final rewrite, scan it for `—` and `–`. Any hit means the draft isn't done.
 
-### 15. Overuse of Boldface
+### 15. Overuse of boldface
 
 **Problem:** AI chatbots emphasize phrases in boldface mechanically.
 
@@ -288,7 +299,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > It blends OKRs, KPIs, and visual strategy tools like the Business Model Canvas and Balanced Scorecard.
 
-### 16. Inline-Header Vertical Lists
+### 16. Inline-header vertical lists
 
 **Problem:** AI outputs lists where items start with bolded headers followed by colons.
 
@@ -302,7 +313,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The update improves the interface, speeds up load times through optimized algorithms, and adds end-to-end encryption.
 
-### 17. Title Case in Headings
+### 17. Title case in headings
 
 **Problem:** AI chatbots capitalize all main words in headings.
 
@@ -328,7 +339,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The product launches in Q3. User research showed a preference for simplicity. Next step: schedule a follow-up meeting.
 
-### 19. Curly Quotation Marks
+### 19. Curly quotation marks
 
 **Problem:** ChatGPT uses curly quotes (“...”) instead of straight quotes ("...").
 
@@ -340,9 +351,9 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > He said "the project is on track" but others disagreed.
 
-## COMMUNICATION PATTERNS
+## Communication patterns
 
-### 20. Collaborative Communication Artifacts
+### 20. Collaborative communication artifacts
 
 **Words to watch:** I hope this helps, Of course!, Certainly!, You're absolutely right!, Would you like..., Want me to...?, Want me to give examples?, Should I continue?, let me know, here is a...
 
@@ -356,7 +367,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The French Revolution began in 1789 when financial crisis and food shortages led to widespread unrest.
 
-### 21. Knowledge-Cutoff Disclaimers and Speculative Gap-Filling
+### 21. Knowledge-cutoff disclaimers and speculative gap-filling
 
 **Words to watch:** as of [date], Up to my last training update, While specific details are limited/scarce..., based on available information, not publicly available, maintains a low profile, keeps personal details private, prefers to stay out of the spotlight, likely [grew up/studied/began], it is believed that
 
@@ -378,7 +389,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > Her early life is not documented in the available sources. (Or omit the section.)
 
-### 22. Sycophantic/Servile Tone
+### 22. Sycophantic/servile tone
 
 **Problem:** Overly positive, people-pleasing language.
 
@@ -390,9 +401,9 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The economic factors you mentioned are relevant here.
 
-## FILLER AND HEDGING
+## Filler and hedging
 
-### 23. Filler Phrases
+### 23. Filler phrases
 
 **Before → After:**
 
@@ -403,7 +414,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 - "The system has the ability to process" → "The system can process"
 - "It is important to note that the data shows" → "The data shows"
 
-### 24. Excessive Hedging
+### 24. Excessive hedging
 
 **Problem:** Over-qualifying statements.
 
@@ -415,7 +426,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The policy may affect outcomes.
 
-### 25. Generic Positive Conclusions
+### 25. Generic positive conclusions
 
 **Problem:** Vague upbeat endings.
 
@@ -427,7 +438,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The company plans to open two more locations next year.
 
-### 26. Hyphenated Word Pair Overuse
+### 26. Hyphenated word pair overuse
 
 **Words to watch:** third-party, cross-functional, client-facing, data-driven, decision-making, well-known, high-quality, real-time, long-term, end-to-end
 
@@ -441,7 +452,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The cross-functional team delivered a high-quality, data-driven report. The team is cross functional, the report is high quality, and the methodology is data driven.
 
-### 27. Persuasive Authority Tropes
+### 27. Persuasive authority tropes
 
 **Phrases to watch:** The real question is, at its core, in reality, what really matters, fundamentally, the deeper issue, the heart of the matter
 
@@ -455,7 +466,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > The question is whether teams can adapt. That mostly depends on whether the organization is ready to change its habits.
 
-### 28. Signposting and Announcements
+### 28. Signposting and announcements
 
 **Phrases to watch:** Let's dive in, let's explore, let's break this down, here's what you need to know, now let's look at, without further ado
 
@@ -469,7 +480,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > Next.js caches data at multiple layers, including request memoization, the data cache, and the router cache.
 
-### 29. Fragmented Headers
+### 29. Fragmented headers
 
 **Signs to watch:** A heading followed by a one-line paragraph that simply restates the heading before the real content begins.
 
@@ -489,7 +500,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 >
 > When users hit a slow page, they leave.
 
-### 30. Diff-Anchored Writing
+### 30. Diff-anchored writing
 
 **Problem:** Documentation or comments written as if narrating a change rather than describing the thing as it is. Unless the document is inherently version-scoped (changelogs, release notes, migration guides), it should read coherently without knowing what changed in the last commit.
 
@@ -501,7 +512,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > This function uses a hash map for O(1) lookups, avoiding the O(n²) cost of naive iteration.
 
-### 31. Manufactured Punchlines and Staccato Drama
+### 31. Manufactured punchlines and staccato drama
 
 **Problem:** LLMs often make every sentence land like a quotable closer, then stack short declarative fragments to manufacture drama. A single short sentence for emphasis is fine; a run of them starts to sound engineered.
 
@@ -513,7 +524,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > AlphaEvolve changed the search because it did not favor symmetry or human-looking designs. That made some of the older assumptions less useful.
 
-### 32. Aphorism Formulas
+### 32. Aphorism formulas
 
 **Words to watch:** X is the Y of Z, X becomes a trap, X is not a tool but a mirror, the language of, the currency of, the architecture of
 
@@ -527,7 +538,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > Symmetric layouts often feel more predictable to users. Teams can over-optimize workflows and miss how people actually use them.
 
-### 33. Conversational Rhetorical Openers
+### 33. Conversational rhetorical openers
 
 **Phrases to watch:** Honestly?, Look, Here's the thing, The thing is, Let's be honest, Real talk, when used as standalone hooks or fake-candid pauses before an ordinary point.
 
@@ -541,9 +552,9 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 > Whether it's worth the price depends on how often you'll use it.
 
-## DETECTION GUIDANCE
+## Detection guidance
 
-### What NOT to flag (false positives)
+### What not to flag (false positives)
 
 A clean human writer can hit several of the patterns above without any AI involvement. Before rewriting, sanity-check that you are not gutting legitimate prose. The following are _not_ reliable indicators on their own:
 
@@ -576,7 +587,7 @@ When you see these, lean toward leaving the prose alone — they are evidence of
 
 ---
 
-## Process and Output
+## Process and output
 
 1. Read the input carefully and identify every instance of the patterns above.
 2. Write a **draft rewrite**. Check that it reads naturally aloud, varies sentence length, prefers specific details and simple constructions (is/are/has), and keeps the appropriate register.
@@ -585,7 +596,7 @@ When you see these, lean toward leaving the prose alone — they are evidence of
 
 Deliver the draft, the brief "still-AI" bullets, the final rewrite, and (optionally) a short summary of changes.
 
-## Full Example
+## Full example
 
 **Before (AI-sounding):**
 

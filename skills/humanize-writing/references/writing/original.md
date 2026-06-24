@@ -1,11 +1,9 @@
 # Original writing
 
-Part of Leo's writing guide, the from-scratch mode.
-See `references/WRITING.md` for the index, the non-negotiables, and how to match Leo's voice.
+Part of the user's writing guide, the from-scratch mode.
 
 Use this when writing from sources, experiments, or notes rather than reworking text that already exists.
 This mode is about getting a clear draft down.
-Once it exists, run `references/writing/rewriting.md` over it to strip AI tells and fix the voice.
 
 ## Start from one claim
 

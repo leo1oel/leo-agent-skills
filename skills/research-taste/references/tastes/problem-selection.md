@@ -1,7 +1,6 @@
 # Problem Selection and Research Taste
 
-Part of Leo's research taste.
-See `references/TASTES.md` for the index and how to use these modules.
+Part of the user's research taste.
 
 ## Research Taste
 

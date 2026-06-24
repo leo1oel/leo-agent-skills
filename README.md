@@ -1,6 +1,6 @@
-# Leo Agent Skills
+# Agent Skills
 
-Personal skills for Leo's AI agents.
+Personal skills for AI agents.
 
 Install all skills globally with:
 
@@ -8,4 +8,4 @@ Install all skills globally with:
 npx -y skills add leo1oel/leo-agent-skills --global --all
 ```
 
-This repository vendors selected third-party skills alongside Leo-specific workflows so dotfiles can install one stable skills source.
+This repository vendors selected third-party skills alongside personal workflows so dotfiles can install one stable skills source.
