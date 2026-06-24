@@ -1,7 +1,7 @@
 # Method and Rigor
 
 Part of Leo's research taste.
-See `~/TASTES.md` for the index and how to use these modules.
+See `references/TASTES.md` for the index and how to use these modules.
 
 ## Experiment Taste
 

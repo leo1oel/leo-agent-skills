@@ -1,8 +1,8 @@
 # Searching and Related Work
 
 How Leo finds papers and maps related work, instead of ad-hoc web search.
-For reading what this turns up, see `~/READING.md` (arxiv2md).
-For the judgment side, choosing what is worth reading, see `~/TASTES.md`.
+For reading what this turns up, use the `arxiv-reading` skill.
+For the judgment side, choosing what is worth reading, use the `research-taste` skill.
 
 ## Tool
 
@@ -69,7 +69,7 @@ Often the title, venue, and year are enough to triage without the abstract.
 
 ## Handoff and scale
 
-Take each promising hit's arxiv id, from `ids.doi` in the `10.48550/arXiv.<id>` form, and read it with arxiv2md (`~/READING.md`).
+Take each promising hit's arxiv id, from `ids.doi` in the `10.48550/arXiv.<id>` form, and read it with the `arxiv-reading` skill.
 Delegate multi-paper sweeps to subagents, so the main context holds the findings rather than the raw search results.
 
 ## Fallbacks

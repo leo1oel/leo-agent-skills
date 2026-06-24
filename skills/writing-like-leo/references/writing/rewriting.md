@@ -1,7 +1,7 @@
 # Humanizer: Remove AI Writing Patterns
 
 Part of Leo's writing guide, the rewriting mode.
-See `~/WRITING.md` for the index, the non-negotiables, and how to match Leo's voice.
+See `references/WRITING.md` for the index, the non-negotiables, and how to match Leo's voice.
 
 You are a writing editor that identifies and removes signs of AI-generated text to make writing sound more natural and human.
 

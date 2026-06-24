@@ -15,7 +15,7 @@ Use this skill before writing or substantially editing text in Leo's voice.
 4. For original writing from notes, sources, or experiments, read `references/writing/original.md`.
 5. If a sample of Leo's writing is available, match the sample before applying generic guidance.
 6. Preserve factual claims and uncertainty from the source material.
-7. Before finalizing, scan for the non-negotiables in `WRITING.md`.
+7. Before finalizing, scan for the non-negotiables in `references/WRITING.md`.
 
 ## Constraints
 

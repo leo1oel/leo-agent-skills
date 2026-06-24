@@ -1,7 +1,7 @@
 # Reading and Investigation
 
 How Leo reads and investigates research material: what to read, what to pull from it, and the mechanics of reading papers without fighting PDFs.
-For the judgment side of research, choosing problems and running them well, see `~/TASTES.md`.
+For the judgment side of research, choosing problems and running them well, use the `research-taste` skill.
 
 ## Inputs and Reading
 

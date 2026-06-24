@@ -1,11 +1,11 @@
 # Original writing
 
 Part of Leo's writing guide, the from-scratch mode.
-See `~/WRITING.md` for the index, the non-negotiables, and how to match Leo's voice.
+See `references/WRITING.md` for the index, the non-negotiables, and how to match Leo's voice.
 
 Use this when writing from sources, experiments, or notes rather than reworking text that already exists.
 This mode is about getting a clear draft down.
-Once it exists, run `~/writing/rewriting.md` over it to strip AI tells and fix the voice.
+Once it exists, run `references/writing/rewriting.md` over it to strip AI tells and fix the voice.
 
 ## Start from one claim
 
@@ -38,4 +38,4 @@ Once it exists, run `~/writing/rewriting.md` over it to strip AI tells and fix t
 ## Then clean it up
 
 - A first draft will still have flat rhythm, AI tells, and an unfocused voice.
-- Switch to `~/writing/rewriting.md` and run its draft, audit, final loop over the text.
+- Switch to `references/writing/rewriting.md` and run its draft, audit, final loop over the text.

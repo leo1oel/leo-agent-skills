@@ -10,14 +10,14 @@ Whatever the task, be especially careful about chasing trends without understand
 
 ## How to use this
 
-The detail lives in focused modules under `~/tastes/`.
+The detail lives in focused modules under `references/tastes/`.
 Read the module that fits the task at hand.
 For open-ended research-direction work, read more than one.
 
 - Choosing what to work on: idea generation, problem selection, predictions as taste, critiquing ideas, and depth-vs-breadth strategy.
-  Read `~/tastes/problem-selection.md`.
+  Read `references/tastes/problem-selection.md`.
 - Doing the work rigorously: experiment design, evaluation, engineering, and the artifacts to leave behind.
-  Read `~/tastes/method-and-rigor.md`.
+  Read `references/tastes/method-and-rigor.md`.
 
-For reading and investigating papers, see `~/READING.md`.
-For how Leo writes, both his public voice and using writing as a tool to think, see `~/WRITING.md`.
+For reading and investigating papers, use the `arxiv-reading` skill.
+For how Leo writes, both his public voice and using writing as a tool to think, use the `writing-like-leo` skill.

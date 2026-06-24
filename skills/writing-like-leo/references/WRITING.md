@@ -8,13 +8,13 @@ When a piece reads better for breaking a rule here, break it, and be ready to sa
 
 ## Two modes
 
-The detail lives in two focused files under `~/writing/`.
+The detail lives in two focused files under `references/writing/`.
 Read the one that fits the task.
 
 - Rewriting. A piece of text already exists, and the job is to improve or rework it, sometimes against reference material.
-  Read `~/writing/rewriting.md`.
+  Read `references/writing/rewriting.md`.
 - Original writing. Starting from sources, experiments, or notes and writing from scratch.
-  Read `~/writing/original.md`.
+  Read `references/writing/original.md`.
 
 Both modes share the rules below.
 
