@@ -1,4 +1,0 @@
-interface:
-  display_name: "Related Work OpenAlex"
-  short_description: "Map related papers through OpenAlex."
-  default_prompt: "Find related work using OpenAlex and Leo's research workflow."
