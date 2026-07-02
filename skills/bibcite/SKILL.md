@@ -17,6 +17,9 @@ bibcite add refs.bib <arXiv id | arXiv URL | DOI | title>  # cite a paper: resol
 bibcite add refs.bib --bibtex '-' <<'EOF'                  # user pasted BibTeX: still route it through add ('-' reads stdin)
 @inproceedings{...}
 EOF
+bibcite add refs.bib --from ids.txt  # several papers: one query per line — use this instead of looping
+bibcite add refs.bib <query> --replace # overwrite a bad existing entry (keeps its citation key)
+bibcite remove refs.bib <key>        # delete an entry — never delete by hand-editing
 bibcite get <query> [--json]         # look a paper up, no .bib file in play: prints BibTeX, writes nothing
 bibcite fix refs.bib                 # "clean up my bibliography": upgrade preprints → tidy → lint
 bibcite upgrade refs.bib [--dry-run] # just the preprint→published step; --dry-run first on large files
@@ -24,7 +27,8 @@ bibcite tidy refs.bib                # formatting only (bibtex-tidy with canonic
 bibcite check refs.bib               # read-only lint: duplicates, preprints, missing fields
 ```
 
-- One paper per `add`/`get` invocation: extra arguments are joined into a single title query (`bibcite add refs.bib attention is all you need` is one lookup), so loop over papers rather than listing several ids in one call.
+- One paper per `add`/`get` query: extra arguments are joined into a single title lookup. For several papers, write them to a file and use `--from` (one process = shared rate-limit state and one tidy pass) instead of looping `add`.
+- An entry that is legitimately preprint-only (will never be published): set `pubstate = {preprint}` on it via `--bibtex --replace` to mute the check/upgrade preprint warnings.
 
 ## Reading the output
 
@@ -43,13 +47,14 @@ Every command except `get`/`tidy` prints a single JSON object on stdout; diagnos
 }
 ```
 
-- `action` is `added`, `exists` (already in the file — fine, not an error), or `upgraded` (preprint replaced by the published version, key kept).
-- `key` is what goes into `\cite{...}`.
-  Keys are regenerated on write, so read the key from the JSON every time — never guess one or reuse one remembered from earlier in the session.
+- `action` is `added`, `exists` (already in the file — fine, not an error), `upgraded` (preprint replaced by the published version, key kept), or `replaced` (`--replace`, key kept).
+- `key` is what goes into `\cite{...}` — always read it from the JSON, never guess one or reuse one remembered from earlier in the session.
+- `upgrade` reports unmatched entries with a `reason`: `no_published_version` (trustworthy miss) vs `sources_unavailable` (sources were down — retry later, do not conclude anything).
 
 ## When resolution fails
 
-- Exit code 2 means no source could resolve the query.
+- Exit code 2: the paper could not be found.
   Report that to the user and ask for a stronger identifier (an arXiv id or DOI beats a fuzzy title) instead of fabricating an entry.
-- Sources rate-limit occasionally; bibcite falls back across arXiv, DBLP, Semantic Scholar, Crossref, and OpenAlex automatically.
-  If every source fails, wait and retry rather than writing the entry by hand.
+- Exit code 3: bibcite itself or its sources failed (rate limits, outages) — the paper may well exist.
+  Wait and retry, or retry with `--no-cache` off the table; never fall back to writing the entry by hand.
+- Successful matches are cached locally (`~/.cache/bibcite/`), so retries and `fix` re-runs are cheap.
