@@ -51,6 +51,7 @@ Every command except `get`/`tidy` prints a single JSON object on stdout; diagnos
 - `action` is `added`, `exists` (already in the file — fine, not an error), `upgraded` (preprint replaced by the published version, key kept), or `replaced` (`--replace`, key kept).
 - `key` is what goes into `\cite{...}` — always read it from the JSON, never guess one or reuse one remembered from earlier in the session.
 - `upgrade` reports unmatched entries with a `reason`: `no_published_version` (trustworthy miss) vs `sources_unavailable` (sources were down — retry later, do not conclude anything).
+- A preprint result carries `published_check`: `complete` means every core source answered and the paper really has no published version; `incomplete` means rate limits interfered — re-run those queries later (`bibcite upgrade` will pick them up) instead of accepting the preprint status.
 - Camera-ready titles often differ from arXiv ones; bibcite fuzzy-matches the drift (source `dblp-fuzzy`) and updates the entry to the published title — trust its title over the preprint's.
 
 ## When resolution fails
