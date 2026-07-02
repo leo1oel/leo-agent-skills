@@ -18,7 +18,8 @@ bibcite add refs.bib --bibtex '-' <<'EOF'                  # user pasted BibTeX:
 @inproceedings{...}
 EOF
 bibcite add refs.bib --from ids.txt  # several papers: one query per line — use this instead of looping
-bibcite add refs.bib <query> --replace # overwrite a bad existing entry (keeps its citation key)
+bibcite add refs.bib <query> --replace # overwrite the matching entry (keeps its key); ERRORS if nothing matches
+bibcite add refs.bib <query> --key k1  # replace exactly entry k1 (when title drift defeats auto-matching)
 bibcite remove refs.bib <key>        # delete an entry — never delete by hand-editing
 bibcite get <query> [--json]         # look a paper up, no .bib file in play: prints BibTeX, writes nothing
 bibcite fix refs.bib                 # "clean up my bibliography": upgrade preprints → tidy → lint
@@ -50,6 +51,7 @@ Every command except `get`/`tidy` prints a single JSON object on stdout; diagnos
 - `action` is `added`, `exists` (already in the file — fine, not an error), `upgraded` (preprint replaced by the published version, key kept), or `replaced` (`--replace`, key kept).
 - `key` is what goes into `\cite{...}` — always read it from the JSON, never guess one or reuse one remembered from earlier in the session.
 - `upgrade` reports unmatched entries with a `reason`: `no_published_version` (trustworthy miss) vs `sources_unavailable` (sources were down — retry later, do not conclude anything).
+- Camera-ready titles often differ from arXiv ones; bibcite fuzzy-matches the drift (source `dblp-fuzzy`) and updates the entry to the published title — trust its title over the preprint's.
 
 ## When resolution fails
 
