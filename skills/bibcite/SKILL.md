@@ -10,6 +10,8 @@ it verifies metadata against online sources, dedupes against the target file, wr
 
 The one rule this skill exists to enforce: route every `.bib` change through `bibcite`, and never manually edit `.bib` files.
 
+If `bibcite` is not on PATH, run it as `uvx --from bibcite-cli bibcite <subcommand> …` (identical usage), or install it once with `uv tool install bibcite-cli`.
+
 ## Commands
 
 ```bash
