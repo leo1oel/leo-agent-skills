@@ -14,7 +14,7 @@ Preserve the factual claims and uncertainty of the source material; humanizing c
 The detail lives in two focused files under `references/writing/`. Read the one that fits:
 
 - **Rewriting** — text already exists and the job is to improve, rework, or strip AI tells from it. Read `references/writing/rewriting.md`.
-- **Original writing** — starting from sources, experiments, or notes and writing from scratch. Read `references/writing/original.md`.
+- **Original writing** — starting from sources, experiments, or notes and writing from scratch; also the home of argument construction and research-writing craft. Read `references/writing/original.md`.
 
 If a sample of the user's own writing is given, read it and match it first: sentence length and how much it varies, diction level, how paragraphs open, punctuation habits, recurring phrases, and how transitions are handled. Match those patterns rather than imposing a default voice.
 
