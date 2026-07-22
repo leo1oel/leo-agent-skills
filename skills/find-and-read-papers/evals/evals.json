@@ -1,0 +1,23 @@
+{
+  "skill_name": "find-and-read-papers",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Find related work on speculative decoding for LLM inference — I care about recent arXiv stuff and the citation lineage from the original Leviathan et al. paper. Give me a short ranked list and tell me which 2–3 are worth reading closely.",
+      "expected_output": "Dual search (alphaXiv + OpenAlex), seed/graph or equivalent lineage for Leviathan, ranked list with arXiv ids and match reasons, 2–3 deep-read picks without dumping raw JSON.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Read https://arxiv.org/abs/2312.00752 and tell me what the selection mechanism actually changes in the SSM recurrence — I need the equations / update rule, not a blog-level summary.",
+      "expected_output": "alphaXiv overview then section-filtered arxiv2md (not arxiv2md.org API, not raw PDF). Equations/details grounded in arxiv2md output.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "What's the main empirical claim in https://arxiv.org/pdf/2211.17192.pdf about speculative-decoding speedups, and which table/figure supports it? Quote the numbers.",
+      "expected_output": "Id normalized from PDF URL; overview for orientation; arxiv2md (or figure fetch) before stating numbers; numbers attributed to table/figure/section from the markdown, not overview alone.",
+      "files": []
+    }
+  ]
+}
