@@ -39,13 +39,14 @@ Read `paper.md`. Widen the section list only when a needed detail is missing.
 
 ## Figures
 
-`arxiv2md` leaves figures as inert paths like `Refer to caption: 2501.11120v1/x1.png`.
-Download the asset you need, then Read the image:
+`arxiv2md` leaves figures as inert names like `Refer to caption: x1.png`.
+Resolve against the paper's HTML directory (versionless id), download, then Read:
 
 ```bash
-curl -sL https://arxiv.org/html/2501.11120v1/x1.png -o fig1.png
+curl -sL "https://arxiv.org/html/<id>/x1.png" -o fig1.png
 ```
 
+If the caption already includes a directory prefix, use that path under `https://arxiv.org/html/` instead.
 Fetch one figure at a time.
 
 ## Linked code
